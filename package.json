@@ -1,22 +1,31 @@
 {
-  "name": "q1abjn--run",
-  "version": "0.0.0",
+  "name": "my-vue-app",
   "private": true,
-  "dependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "antd": "5.18.2",
-    "@ant-design/icons": "5.3.7",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "antd": "5.19.3",
+    "@ant-design/icons": "5.4.0",
+    "@ant-design/pro-layout": "7.19.8"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "@types/react": "17.0.80",
+    "@types/react-dom": "17.0.25",
+    "@typescript-eslint/eslint-plugin": "7.15.0",
+    "@typescript-eslint/parser": "7.15.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-react-refresh": "0.4.7",
+    "typescript": "5.2.2",
+    "vite": "5.3.4"
   }
 }
